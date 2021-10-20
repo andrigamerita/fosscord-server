@@ -2,7 +2,7 @@ const { Config, initDatabase } = require("@fosscord/util");
 const fs = require("fs");
 const path = require("path");
 const { FosscordServer } = require("../dist/Server");
-const Server = new FosscordServer({ port: 3001 });
+const Server = new FosscordServer({ port: 5000 });
 global.server = Server;
 module.exports = async () => {
 	try {

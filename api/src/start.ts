@@ -22,7 +22,7 @@ if (cluster.isMaster && process.env.NODE_ENV == "production") {
 		cluster.fork();
 	});
 } else {
-	var port = Number(process.env.PORT) || 3001;
+	var port = Number(process.env.PORT) || 5000;
 
 	const server = new FosscordServer({ port });
 	server.start().catch(console.error);
